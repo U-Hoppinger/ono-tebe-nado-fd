@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="menu">
+      <nav class="menu-header">
         <a href="#">
           главная
         </a>
@@ -24,19 +24,35 @@
       </nav>
       <img class="logo" src="images/logo-black.svg" alt="логотип">
       <address class="address">
-        +9 999 555 5555
-        info@sobaka.ge
-        наб. Принсенграхт 263- 265, Амстердам
+        <ul>
+          <li>
+            +9 999 555 5555
+          </li>
+          <li>
+              info@sobaka.ge
+          </li>
+          <li>
+            наб. Принсенграхт 263- 265, Амстердам
+          </li>
+        </ul>
       </address>
     </header>
     <main class="main">
       <section class="cover">
-        <h1>
-          Оно тебе надо
-        </h1>
+        <div class="text-cover">
+          <div class="line left">
+            <h1>оно</h1>
+          </div>
+          <div class="line center">
+            <h1>тебе</h1>
+          </div>
+          <div class="line right">
+            <h1>надо</h1>
+          </div>
+        </div>
         <div class="description">
           Аукцион вещей, в которые никто не верил
-          <button>Сделать ставку</button>
+          <button class="button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
