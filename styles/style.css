@@ -3,8 +3,6 @@ header {
   grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
   align-items: center;
-  padding-top: 92px;
-  padding-left: 50px;
 }
 .address a { 
   display: inline-block; 
@@ -13,23 +11,24 @@ header {
   text-decoration: none; 
 }
 header img {
-  width: 129.11px;
+  width: 133px;
   height: 104.65px;
-  margin-left: 0;
+  margin-left: 20px;
   padding-left: 0;
 }
 li {
-  gap: 20px;
+
   height: 21px;
   margin-left: 16px;
-  padding-left: 6px;
+  padding-left: 5px;
   font-size: 18px;
 }
 .menu__header {
   display: flex;
-  width: 391.48px;
+  width: 420px;
   margin-right: 0;
   margin-left: 40px;
+  margin-bottom: 5px;
 }
 .logo__header {
   margin: 0;
@@ -42,7 +41,7 @@ li {
   width: 240px;
   height: 98px;
   margin-top: 10px;
-  margin-left: 170px;
+  margin-left: 200px;
   font-size: 18px;
 }
 .header {
@@ -81,23 +80,24 @@ li {
   background-position: center;
   background-size: cover;
 }
-.description {
+.description { 
   display: flex;
   justify-content: space-between;
   width: 1000px;
   height: 51px;
-  margin-top: 106px;
+  margin-top: 133px;
+  margin-left: 5px;
   font-size: 22px;
   text-align: justify;
-}
+} /*посмотри завтра*/
 .text-last {
   display: flex;
   align-items: center;
   width: 637px;
-  word-spacing: 15px;
+  word-spacing: 18px;
 }
 .button {
-  width: 268px;
+  width: 262px;
   border-color: #fff;
   color: #fff;
   font-size: 22px;
@@ -126,23 +126,30 @@ h1 {
 }
 .center {
   text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .right {
   text-align: right;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 h2 {
   width: 121px;
   height: 47px;
   margin-top: 0px;
   margin-bottom: 27px;
-  margin-left: 40px;
   font-size: 40px;
   font-style: bold;
   text-transform: uppercase;
 }
+.name_lots {
+  margin-left: 60px;
+}
 .lost-main {
-  width: 1052px;
+  width: 1050px;
   height: 723px;
+  margin-left: 5px;
 }
 .lots {
   display: flex;
@@ -177,19 +184,22 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-right: 5px;
+  font-size: 22px;
 }
 .book {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/card-lot-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/card-lot-02.jpg);
 }
 .picture {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/card-lot-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/card-lot-03.jpg);
 }
 .film {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)),url(../images/card-lot-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)),url(../images/card-lot-01.jpg);
 }
 .few-biggest {
   display: inline-block;
-  margin-left: 40px; 
+  margin-left: 65px; 
+  margin-top: 5px;
   border-bottom: 1px solid rgb(0, 0, 0); 
   padding-bottom: 1px;
   font-size: 20px; 
@@ -209,8 +219,8 @@ h3 {
   justify-content: space-between;
   width: 693px;
   height: 449px;
-  margin-top: 136px;
-  margin-left: 40px;
+  margin-top: 135px;
+
 }
 .circle {
   display: flex;
@@ -237,6 +247,14 @@ h3 {
 .text-margin {
   margin: 0;
   padding: 0;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.mistake {
+  margin-top: 70px;
+}
+.correct {
+  margin-top: 30px;
 }
 footer {
   display: flex;
@@ -251,6 +269,7 @@ footer {
   height: 98px;
   margin-bottom: 82px;
   text-align: center;
+  font-size: 18px;
 }
 .links-images {
   display: flex;
@@ -266,4 +285,7 @@ footer {
 .address-bottom {
   margin: 0;
   margin-left: 50px;
+}
+.decoration{
+  text-decoration: none;
 }
