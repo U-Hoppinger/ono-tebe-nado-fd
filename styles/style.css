@@ -1,4 +1,51 @@
-/* место для вашего кода */
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  padding-top: 92px;
+  padding-left: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.address a {
+  text-decoration: none; 
+  display: inline-block; 
+  border-bottom: 1px solid rgb(0, 0, 0); 
+  padding-bottom: 1px; 
+}
+header img {
+  width: 129.11px;
+  height: 104.65px;
+  padding-left: 0;
+  margin-left: 0;
+}
+li {
+  padding-left: 6px;
+  margin-left: 16px;
+  gap: 20px;
+  font-size: 18px;
+  height: 21px;
+}
+.menu__header {
+  display: flex;
+  margin-right: 0;
+  width: 391.48px;
+  margin-left: 40px;
+}
+.logo__header {
+  margin: 0;
+}
+.menu__header li::marker {
+  content: "◦"; 
+}
+.address {
+  width: 240px;
+  height: 98px;
+  align-items: center;
+  margin-left: 170px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 
 .header {
   display: flex;
@@ -7,25 +54,8 @@
   height: 293px;
 
 }
-.menu-header {
-  display: flex;
-  margin-left: 50px;
-  margin-top: 133px;
-  margin-bottom: 138px;
-  margin-right: 36.52px;
-  gap: 20px;
-}
-a {
-  text-decoration: none; 
-  display: inline-block; 
-  border-bottom: 1px solid rgb(0, 0, 0); 
-  padding-bottom: 1px; 
-}
-.menu-header li::marker {
-  content: "◦"; 
-  margin-left: 5px;
-  margin-right: 5px;
-}
+
+
 
 .address {
   width: 240px;
@@ -132,7 +162,7 @@ h2 {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 600px;
 }
 .lots a {
   display: flex;
@@ -176,12 +206,15 @@ h3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)),url(../images/card-lot-01.jpg);
 }
 .few-biggest {
-  margin-bottom: 0;
   margin-left: 40px;
   font-size: 20px;
+  display: inline-block; 
+  border-bottom: 1px solid rgb(0, 0, 0); 
+  padding-bottom: 1px; 
+
 }
 .lost-main { 
-  margin-bottom: 300px; /*для просмотра отдельно элемента, удалить позже*/
+  margin-bottom: 120px; /*для просмотра отдельно элемента, удалить позже*/
 }
 
 .about { 
@@ -263,4 +296,3 @@ footer {
   margin: 0;
   margin-left: 50px;
 }
-
