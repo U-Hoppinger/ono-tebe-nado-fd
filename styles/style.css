@@ -12,20 +12,17 @@ header {
 }
 header img {
   width: 133px;
-  height: 104.65px;
   margin-left: 20px;
   padding-left: 0;
 }
 li {
-
-  height: 21px;
   margin-left: 16px;
   padding-left: 5px;
   font-size: 18px;
 }
 .menu__header {
   display: flex;
-  width: 420px;
+  max-width: width(100%);
   margin-right: 0;
   margin-left: 40px;
   margin-bottom: 5px;
@@ -33,41 +30,34 @@ li {
 .logo__header {
   margin: 0;
 }
-.menu__header li::marker {
-  content: "◦"; 
+.menu__header li {
+  list-style-type: circle;
 }
 .address {
   align-items: center;
+  font-style: normal;
   width: 240px;
-  height: 98px;
   margin-top: 10px;
   margin-left: 200px;
   font-size: 18px;
+  margin-top: 95px;
+  margin-right: 50px;
+  margin-bottom: 100px;
 }
 .header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 293px;
 }
-.address {
-  align-items: center;
-  width: 240px;
-  height: 98px;
-  margin-top: 95px;
-  margin-right: 50px;
-  margin-bottom: 100px;
-}
+
 .logo {
   width: 94.84px;
-  height: 124.05px;
   margin-top: 92px;
   margin-right: 184px;
   margin-bottom: 96px;
 }
 .cover {
-  width: 1100px;
-  height: 757px;
+  max-width: width(100%);
   margin-bottom: 180px;
   padding-top: 165px;
   padding-right: 50px;
@@ -84,7 +74,6 @@ li {
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  height: 51px;
   margin-top: 133px;
   margin-left: 5px;
   font-size: 22px;
@@ -114,7 +103,6 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 1000px;
-  height: 358px;
   letter-spacing: 30px;
 }
 .line {
@@ -136,7 +124,6 @@ h1 {
 }
 h2 {
   width: 121px;
-  height: 47px;
   margin-top: 0px;
   margin-bottom: 27px;
   font-size: 40px;
@@ -148,13 +135,11 @@ h2 {
 }
 .lost-main {
   width: 1050px;
-  height: 723px;
   margin-left: 5px;
 }
 .lots {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 600px;
   list-style-type: none;
 }
 .lots a {
@@ -179,7 +164,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 596px;
+  min-height: lenght(723px); /*доделай*/
   color: #fff; 
   background-repeat: no-repeat;
   background-position: center;
@@ -204,28 +189,23 @@ h3 {
   padding-bottom: 1px;
   font-size: 20px; 
 }
-.lost-main { 
-  margin-bottom: 120px; /*для просмотра отдельно элемента, удалить позже*/
-}
 .about { 
   display: flex;
   width: 1052px;
-  height: 595px;
   margin-left: 24px;
 }
-.about-aukcion {
+.about-auction {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 693px;
-  height: 449px;
   margin-top: 135px;
 
 }
 .circle {
   display: flex;
   width:  240px;
-  height: 240px;
+  height: 240px; /*подкорректируй*/
   margin-top: 35px;
   margin-right: 72px;
   margin-left: 47px;
@@ -235,16 +215,15 @@ h3 {
 }
 .invis { 
   width:  148px;
-  height: 114px;
   margin-top: 64px;
   margin-right: 45.52px;
   margin-left: 46.48px;
 }
-.zagolovok-o-aukcione {
+.heading-about-auction {
   width: 291px;
-  height: 47px;
 }
 .text-margin {
+  font-style: Regular;
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -266,7 +245,6 @@ footer {
 .menu-bottom {
   align-items: center;
   width: 240px;
-  height: 98px;
   margin-bottom: 82px;
   text-align: center;
   font-size: 18px;
@@ -275,12 +253,10 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 240px;
-  height: 48px;
   margin-right: 50px;
 }
 .links-images img {
   width: 48px;
-  height: 48px;
 }
 .address-bottom {
   margin: 0;
@@ -288,4 +264,7 @@ footer {
 }
 .decoration{
   text-decoration: none;
+}
+.without_decoration li::marker {
+  content: none;
 }
