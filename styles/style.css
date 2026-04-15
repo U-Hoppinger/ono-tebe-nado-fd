@@ -1,3 +1,6 @@
+.main {
+  max-width: 1100px;
+}
 header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -20,36 +23,25 @@ li {
   padding-left: 5px;
   font-size: 18px;
 }
-.menu__header {
-  display: flex;
-  max-width: width(100%);
-  margin-right: 0;
-  margin-left: 40px;
-  margin-bottom: 5px;
-}
 .logo__header {
-  margin: 0;
-}
-.menu__header li {
-  list-style-type: circle;
+  margin-left: 20px;
 }
 .address {
   align-items: center;
-  font-style: normal;
   width: 240px;
   margin-top: 10px;
-  margin-left: 200px;
-  font-size: 18px;
   margin-top: 95px;
   margin-right: 50px;
   margin-bottom: 100px;
+  margin-left: 200px;
+  font-size: 18px;
+  font-style: normal;
 }
 .header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .logo {
   width: 94.84px;
   margin-top: 92px;
@@ -57,15 +49,17 @@ li {
   margin-bottom: 96px;
 }
 .cover {
-  max-width: width(100%);
+  position: relative;
+  max-width: 1100px;
+  max-height: 757px;
   margin-bottom: 180px;
   padding-top: 165px;
-  padding-right: 50px;
+  padding-right: 25px;
   padding-bottom: 50px;
   padding-left: 50px;
   color: #fff;
   text-transform: uppercase;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('../images/cover.jpg');
+  background-image: url('../images/cover.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -74,53 +68,55 @@ li {
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  margin-top: 133px;
-  margin-left: 5px;
+  margin-top: 95px;
+  margin-left: 10px;
   font-size: 22px;
   text-align: justify;
 } /*посмотри завтра*/
 .text-last {
   display: flex;
   align-items: center;
-  width: 637px;
-  word-spacing: 18px;
+  max-width: 637px;
 }
 .button {
-  width: 262px;
+  z-index: 1;
+  min-width: 250px;
+  min-height: 50px;
+  margin-left: 90px;
   border-color: #fff;
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
   background: transparent;
 }
-h1 {
-  font-weight: 700px;
-  font-size: 100px;
-  font-style: bold;
-  line-height: 114.99999999999999%;
-}
 .text-cover {
   display: flex;
   flex-direction: column;
-  width: 1000px;
-  letter-spacing: 30px;
 }
 .line {
-  width: 100%;
+  display: block;
+  font-size: 100px;
+  letter-spacing: 30px;
 }
+ .aaa { 
+  z-index: 1;
+  letter-spacing: 2.8px;
+ }
+
 .left {
   width: 286px;
   text-align: left;
 }
 .center {
-  text-align: center;
   margin-top: 20px;
   margin-left: 20px;
+  letter-spacing: 30px;
+  text-align: center;
 }
 .right {
-  text-align: right;
   margin-top: 20px;
-  margin-left: 30px;
+  text-align: right;
+
 }
 h2 {
   width: 121px;
@@ -137,14 +133,6 @@ h2 {
   width: 1050px;
   margin-left: 5px;
 }
-.lots {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-.lots a {
-  display: flex;
-}
 .lots p {
   margin-right: 40px;
   margin-bottom: 48px;
@@ -159,32 +147,10 @@ h3 {
   text-decoration: underline;
   text-transform: uppercase;
 }
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 334px;
-  min-height: lenght(723px); /*доделай*/
-  color: #fff; 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-right: 5px;
-  font-size: 22px;
-}
-.book {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/card-lot-02.jpg);
-}
-.picture {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/card-lot-03.jpg);
-}
-.film {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)),url(../images/card-lot-01.jpg);
-}
 .few-biggest {
-  display: inline-block;
-  margin-left: 65px; 
-  margin-top: 5px;
+  display: inline-block; 
+  margin-top: 30px;
+  margin-left: 65px;
   border-bottom: 1px solid rgb(0, 0, 0); 
   padding-bottom: 1px;
   font-size: 20px; 
@@ -192,6 +158,7 @@ h3 {
 .about { 
   display: flex;
   width: 1052px;
+  margin-top: 120px; /*удали при проверки*/
   margin-left: 24px;
 }
 .about-auction {
@@ -200,12 +167,10 @@ h3 {
   justify-content: space-between;
   width: 693px;
   margin-top: 135px;
-
 }
 .circle {
-  display: flex;
   width:  240px;
-  height: 240px; /*подкорректируй*/
+  height: 240px;
   margin-top: 35px;
   margin-right: 72px;
   margin-left: 47px;
@@ -223,11 +188,11 @@ h3 {
   width: 291px;
 }
 .text-margin {
-  font-style: Regular;
   margin: 0;
+  margin-top: 40px;
   padding: 0;
   font-size: 20px;
-  margin-top: 40px;
+  font-style: Regular;
 }
 .mistake {
   margin-top: 70px;
@@ -244,10 +209,10 @@ footer {
 }
 .menu-bottom {
   align-items: center;
-  width: 240px;
+  max-width: 240px;
   margin-bottom: 82px;
-  text-align: center;
   font-size: 18px;
+  text-align: center;
 }
 .links-images {
   display: flex;
@@ -260,11 +225,87 @@ footer {
 }
 .address-bottom {
   margin: 0;
+  margin-bottom: 2px;
   margin-left: 50px;
 }
 .decoration{
   text-decoration: none;
 }
-.without_decoration li::marker {
-  content: none;
+.cards {
+  display: flex;
+  gap: 20px;
+}
+.lots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 10px;
+  list-style-type: none;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  max-width: 334px;
+  min-height: 596px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+}
+.text-cards {
+  z-index: 1;
+  color: #fff;
+}
+.text_heading_cards {
+  z-index: 1;
+  color: #fff;
+}
+.fon__film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+.fon__book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+.fon__picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, .6);
+}
+.lots a {
+  text-decoration: none;
+}
+.headin_lots {
+  margin-top: 10px;
+  margin-left: 65px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.menu__header li {
+  list-style-type: circle;
+}
+.without_decoration {
+  list-style-type: none;
+}
+.menu__header a {
+  border-bottom: 1px solid rgb(0, 0, 0); 
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+.modification {
+  border-bottom: 1px solid rgb(0, 0, 0); 
 }
