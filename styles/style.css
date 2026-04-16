@@ -1,17 +1,38 @@
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 33px;
+  list-style-type: circle;
+}
+
+.link {
+  font-style: Raleway;
+  text-underline-offset: 3px;
+  line-height: 100%;
+}
+.link_active {
+  text-decoration: none;
+}
+.logo__header {
+  margin-left: -10px;
+}
 .main {
   max-width: 1100px;
 }
-header {
+.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
   align-items: center;
+  
 }
+
 .address a { 
-  display: inline-block; 
-  border-bottom: 1px solid rgb(0, 0, 0); 
-  padding-bottom: 1px;
-  text-decoration: none; 
+  text-underline-offset: 4px; 
 }
 header img {
   width: 133px;
@@ -23,25 +44,16 @@ li {
   padding-left: 5px;
   font-size: 18px;
 }
-.logo__header {
-  margin-left: 20px;
-}
 .address {
   align-items: center;
   width: 240px;
-  margin-top: 10px;
-  margin-top: 95px;
-  margin-right: 50px;
-  margin-bottom: 100px;
-  margin-left: 200px;
+  margin-top: 94px;
+  margin-bottom: 110px;
+  margin-left: 189px;
   font-size: 18px;
   font-style: normal;
 }
-.header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+
 .logo {
   width: 94.84px;
   margin-top: 92px;
@@ -51,10 +63,10 @@ li {
 .cover {
   position: relative;
   max-width: 1100px;
-  max-height: 757px;
+  min-height: 757px;
   margin-bottom: 180px;
   padding-top: 165px;
-  padding-right: 25px;
+  padding-right: 20px;
   padding-bottom: 50px;
   padding-left: 50px;
   color: #fff;
@@ -68,11 +80,10 @@ li {
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  margin-top: 95px;
-  margin-left: 10px;
+  margin-top: 105px;
   font-size: 22px;
   text-align: justify;
-} /*посмотри завтра*/
+}
 .text-last {
   display: flex;
   align-items: center;
@@ -92,15 +103,19 @@ li {
 .text-cover {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .line {
   display: block;
   font-size: 100px;
   letter-spacing: 30px;
 }
- .aaa { 
+.setting_text {
   z-index: 1;
-  letter-spacing: 2.8px;
+}
+ .setting_text_inf { 
+  z-index: 1;
+  word-spacing: 18px;
  }
 
 .left {
@@ -108,16 +123,15 @@ li {
   text-align: left;
 }
 .center {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 18px;
   letter-spacing: 30px;
   text-align: center;
 }
 .right {
-  margin-top: 20px;
+  margin-top: 16px;
   text-align: right;
-
 }
+
 h2 {
   width: 121px;
   margin-top: 0px;
@@ -126,15 +140,12 @@ h2 {
   font-style: bold;
   text-transform: uppercase;
 }
-.name_lots {
-  margin-left: 60px;
-}
 .lost-main {
   width: 1050px;
   margin-left: 5px;
 }
 .lots p {
-  margin-right: 40px;
+  margin-right: 35px;
   margin-bottom: 48px;
   margin-left: 40px;
   font-size: 20px;
@@ -158,7 +169,7 @@ h3 {
 .about { 
   display: flex;
   width: 1052px;
-  margin-top: 120px; /*удали при проверки*/
+  margin-top: 118px;
   margin-left: 24px;
 }
 .about-auction {
@@ -188,18 +199,19 @@ h3 {
   width: 291px;
 }
 .text-margin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   margin: 0;
-  margin-top: 40px;
-  padding: 0;
+  margin-top: 74px;
+  padding-bottom: 0;
   font-size: 20px;
+  max-width: 690px;
+}
+.text-margin p {
   font-style: Regular;
 }
-.mistake {
-  margin-top: 70px;
-}
-.correct {
-  margin-top: 30px;
-}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -213,6 +225,8 @@ footer {
   margin-bottom: 82px;
   font-size: 18px;
   text-align: center;
+  list-style-type: none;
+  margin-right: 15px;
 }
 .links-images {
   display: flex;
@@ -231,17 +245,17 @@ footer {
 .decoration{
   text-decoration: none;
 }
-.cards {
-  display: flex;
-  gap: 20px;
-}
 .lots {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 10px;
   list-style-type: none;
+  max-width: 1052px;
+  margin-left: 25px;
+}
+.lots li {
+  padding: 0;
+  margin: 0;
 }
 .card {
   position: relative;
@@ -253,6 +267,8 @@ footer {
   border: 1px solid black;
   background-position: center;
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 .text-cards {
   z-index: 1;
@@ -286,26 +302,9 @@ footer {
   margin-top: 10px;
   margin-left: 65px;
 }
-.menu__header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 5px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.menu__header {
-  list-style-type: circle;
-}
+
+
 .without_decoration {
   list-style-type: none;
 }
-.menu__header a {
-  border-bottom: 1px solid rgb(0, 0, 0); 
-  padding-bottom: 1px;
-  text-decoration: none;
-}
-.modification {
-  border-bottom: 1px solid rgb(0, 0, 0); 
-}
+
