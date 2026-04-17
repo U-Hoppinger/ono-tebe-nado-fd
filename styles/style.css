@@ -8,7 +8,6 @@
   margin-right: 33px;
   list-style-type: circle;
 }
-
 .link {
   font-style: Raleway;
   text-underline-offset: 3px;
@@ -28,9 +27,7 @@
   grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
   align-items: center;
-  
 }
-
 .address a { 
   text-underline-offset: 4px; 
 }
@@ -53,7 +50,6 @@ li {
   font-size: 18px;
   font-style: normal;
 }
-
 .logo {
   width: 94.84px;
   margin-top: 92px;
@@ -117,7 +113,6 @@ li {
   z-index: 1;
   word-spacing: 18px;
  }
-
 .left {
   width: 286px;
   text-align: left;
@@ -131,7 +126,6 @@ li {
   margin-top: 16px;
   text-align: right;
 }
-
 h2 {
   width: 121px;
   margin-top: 0px;
@@ -300,8 +294,6 @@ h3 {
   margin-top: 10px;
   margin-left: 65px;
 }
-
-
 .without_decoration {
   list-style-type: none;
 }
